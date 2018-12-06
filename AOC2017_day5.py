@@ -1,9 +1,10 @@
-with open('AOC2017_5.data', 'r') as f:
-    data = [int(x) for x in f.read().split('\n')]
-
 '''
 follow the jumps until one leads outside the list.
 after each jump, the offset of that instruction increases by 1'''
+
+with open('AOC2017_5.data', 'r') as f:
+    data = [int(x) for x in f.read().split('\n')]
+
 steps = 0
 i = 0
 while True:
@@ -15,13 +16,15 @@ while True:
     except IndexError:
         print('part 1:', steps)
         break
-        
-with open('AOC2017_5.data', 'r') as f:
-    data = [int(x) for x in f.read().split('\n')]
+
 
     
 '''after each jump, if the offset was three or more, instead decrease it by 1. 
 Otherwise, increase it by 1 as before'''
+
+with open('AOC2017_5.data', 'r') as f:
+    data = [int(x) for x in f.read().split('\n')]
+
 steps = 0
 i = 0
 while True:
